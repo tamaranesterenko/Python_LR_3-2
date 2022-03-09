@@ -8,7 +8,7 @@
 
 
 if __name__ == "__main__":
-    with open ("text.txt", "r", encoding="utf-8") as f:
+    with open("text.txt", "r", encoding="utf-8") as f:
         sentences = f.readlines()
 
     counter = 0
@@ -16,8 +16,8 @@ if __name__ == "__main__":
     for sentence in sentences:
         words = sentence.split(' ')
         for word in words:
-             if key == word:
-                 counter += 1
+            if key == word:
+                counter += 1
         print(sentence, counter)
 
 
